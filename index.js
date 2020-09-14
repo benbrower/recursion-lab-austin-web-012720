@@ -35,6 +35,11 @@ function addUpTo(arr, i) {
   }
 }
 
-function maxOf(arr, i){
-  console.log(arr, i)
+function maxOf(arr){
+  console.log(arr)
+  if (arr.length === 1){
+    return arr[0];
+  }else{
+    return Math.max(arr.pop(), maxOf(arr)
+  }
 }
