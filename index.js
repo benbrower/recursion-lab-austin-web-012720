@@ -45,5 +45,11 @@ function maxOf(arr){
 }
 
 function includesNumber(arr, n) {
-  if (arr.length > 0)
+  if (!arr.length){
+    return false;
+  } else if (arr[arr.length - 1] === n){
+    return true;
+  } else {
+    return includesNumber(arr.pop(), n)
+  }
 }
