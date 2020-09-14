@@ -21,7 +21,7 @@ function isPalindrome(str) {
   if (str.length < 2) {
     return true
   } else if (str[0] === str[str.length - 1]) {
-    isPalindrome(str.substring(1, str.length - 1))
+    return isPalindrome(str.substring(1, str.length - 1))
   } else {
     return false
   }
@@ -29,4 +29,7 @@ function isPalindrome(str) {
 
 function addUpTo(arr, i) {
   console.log(arr, i)
+  if (i > 0){
+    return arr[i] + addUpTo(arr, --i)
+  }
 }
