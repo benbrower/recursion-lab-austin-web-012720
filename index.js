@@ -40,6 +40,6 @@ function maxOf(arr){
   if (arr.length === 1){
     return arr[0];
   }else{
-    return Math.max(arr.pop(), maxOf(arr)
+    return Math.max(arr.pop(), maxOf(arr))
   }
 }
