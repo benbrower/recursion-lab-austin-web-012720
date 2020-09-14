@@ -31,5 +31,7 @@ function addUpTo(arr, i) {
   console.log(arr, i)
   if (i > 0){
     return arr[i] + addUpTo(arr, --i)
+  } else {
+    return arr[i]
   }
 }
