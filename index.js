@@ -43,3 +43,7 @@ function maxOf(arr){
     return Math.max(arr.pop(), maxOf(arr))
   }
 }
+
+function includesNumber(arr, n) {
+  if (arr.length > 0)
+}
