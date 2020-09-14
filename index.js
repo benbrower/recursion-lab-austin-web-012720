@@ -36,7 +36,6 @@ function addUpTo(arr, i) {
 }
 
 function maxOf(arr){
-  console.log(arr)
   if (arr.length === 1){
     return arr[0];
   }else{
@@ -45,6 +44,8 @@ function maxOf(arr){
 }
 
 function includesNumber(arr, n) {
+  console.log(arr)
+  
   if (!arr.length){
     return false;
   } else if (arr.pop() === n){
