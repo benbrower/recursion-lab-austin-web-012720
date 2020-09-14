@@ -12,7 +12,6 @@ function reverseString(str){
   if (str.length < 2){
     return str;
   } else {
-    console.log(str.substring(1) + str[0])
     return reverseString(str.substring(1)) + str[0]
   }
 }
@@ -45,7 +44,7 @@ function maxOf(arr){
 
 function includesNumber(arr, n) {
   console.log(arr)
-  
+
   if (!arr.length){
     return false;
   } else if (arr.pop() === n){
