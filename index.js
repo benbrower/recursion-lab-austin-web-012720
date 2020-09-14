@@ -18,7 +18,6 @@ function reverseString(str){
 }
 
 function isPalindrome(str) {
-  console.log(str, str[0], str[str.length - 1])
   if (str.length < 2) {
     return true
   } else if (str[0] === str[str.length - 1]) {
