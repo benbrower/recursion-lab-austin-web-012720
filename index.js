@@ -47,9 +47,9 @@ function includesNumber(arr, n) {
 
   if (!arr.length){
     return false;
-  } else if (arr.pop() === n){
+  } else if (arr[0] === n){
     return true;
   } else {
-    return includesNumber(arr, n)
+    return includesNumber(arr.slice(1), n)
   }
 }
