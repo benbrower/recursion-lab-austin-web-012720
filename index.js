@@ -35,3 +35,7 @@ function addUpTo(arr, i) {
     return arr[i]
   }
 }
+
+function maxOf(arr, i){
+  console.log(arr, i)
+}
