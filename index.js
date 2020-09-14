@@ -14,6 +14,5 @@ function reverseString(str){
   } else {
     console.log(str.substring(1) + str[0])
     return reverseString(str.substring(1)) + str[0]
-
   }
 }
