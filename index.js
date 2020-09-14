@@ -43,7 +43,7 @@ function maxOf(arr){
 }
 
 function includesNumber(arr, n) {
-  console.log(arr)
+  console.log(arr, n)
 
   if (!arr.length){
     return false;
