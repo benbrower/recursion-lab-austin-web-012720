@@ -19,9 +19,9 @@ function reverseString(str){
 
 function isPalindrome(str) {
   console.log(str, str[0], str[str.length - 1])
-  // if (str.length < 2) {
-  //   isPalindrome(str.substring(1, str.length - 1))
-  // } else if (str[0] === str[str.length - 1]) {
-  //   return true
-  // } else return false
+  if (str.length < 2) {
+    return true
+  } else if (str[0] === str[str.length - 1]) {
+    isPalindrome(str.substring(1, str.length - 1))
+  } else return false
 }
